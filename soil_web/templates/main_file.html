@@ -1,0 +1,127 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{%static 'mainpage/sty.css'%}">
+    <title>FieldScanner</title>
+</head>
+<body>
+    <nav>
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="/logout/">Logout</a>  
+        
+    </div>
+    <div class="mobile_nav">
+        <a class="active" href="#home">Home</a>
+        <button class="btn" onclick="nav_but()"><i class="fa fa-bars"></i></button>
+    </div>
+    <div class="mobile_list">
+        <a href="">Home</a>
+        <a href="">News</a>
+        <a href="">Contact</a>
+        <a href="">About</a>
+        <a href="/logout/">Logout</a>
+    </div>
+</nav>
+<h3 class="htext">{{text}} <br> wait 10sec for update the data</h3> 
+<div class="hide_div"><p id="terget">{{id}}</p></div>  
+<main>
+  
+    <div class="card">
+        <div class="graph-container">
+            <canvas id="soil_n"></canvas>
+        </div>
+        <div class="container">
+          <h4><b>Nitrogen in soil (N)</b></h4> 
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis eos impedit temporibus ex velit fugiat soluta quibusdam. Unde alias quae eius similique illo fugit veniam.</p> 
+          <div class="a_text"><a href="">Read More</a></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="graph-container">
+            <canvas id="soil_p"></canvas>
+        </div>
+        <div class="container">
+          <h4><b>Phosphorus in soil (P)</b></h4> 
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis eos impedit temporibus ex velit fugiat soluta quibusdam. Unde alias quae eius similique illo fugit veniam.</p> 
+          <div class="a_text"><a href="">Read More</a></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="graph-container">
+            <canvas id="soil_k"></canvas>
+        </div>
+        <div class="container">
+          <h4><b>Potassium in soil (K)</b></h4> 
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis eos impedit temporibus ex velit fugiat soluta quibusdam. Unde alias quae eius similique illo fugit veniam.</p> 
+          <div class="a_text"><a href="">Read More</a></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="graph-container">
+            <canvas id="soil_mos"></canvas>
+        </div>
+        <div class="container">
+          <h4><b>Soil Water</b></h4> 
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis eos impedit temporibus ex velit fugiat soluta quibusdam. Unde alias quae eius similique illo fugit veniam.</p> 
+          <div class="a_text"><a href="">Read More</a></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="graph-container">
+            <canvas id="soil_light"></canvas>
+        </div>
+        <div class="container">
+          <h4><b>Light</b></h4> 
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis eos impedit temporibus ex velit fugiat soluta quibusdam. Unde alias quae eius similique illo fugit veniam.</p> 
+          <div class="a_text"><a href="">Read More</a></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="graph-container">
+            <canvas id="soil_tem"></canvas>
+        </div>
+        <div class="container">
+          <h4><b>Temperature</b></h4> 
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis eos impedit temporibus ex velit fugiat soluta quibusdam. Unde alias quae eius similique illo fugit veniam.</p> 
+          <div class="a_text"><a href="">Read More</a></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="graph-container">
+            <canvas id="soil_hum"></canvas>
+        </div>
+        <div class="container">
+          <h4><b>Humidity</b></h4> 
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis eos impedit temporibus ex velit fugiat soluta quibusdam. Unde alias quae eius similique illo fugit veniam.</p> 
+          <div class="a_text"><a href="">Read More</a></div>
+        </div>
+      </div>
+</main>
+
+<footer>
+    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, itaque velit! At, eaque animi adipisci ullam aliquam, ex fugit non inventore assumenda hic fugiat voluptate!</h3>
+    <div class="footer_a"><a href="">Facebook</a>
+    <a href="">Instagram</a>
+    <a href="">Help</a>
+    </div>
+</footer>
+        
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+<script src="{%static 'mainpage/main.js'%}"></script>
+</html>

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %}User Profile{% endblock title %}
+{% block body %}
+<div class="disData">
+    <h3>Your name</h3>
+    <h4>{{username}}</h4>
+    <h3>Email</h3>
+    <h4>{{email}}</h4>
+    <h3>DeviceID</h3>
+    <h4>{{deviceid}}</h4>
+    <h3>Address</h3>
+    <h4>{{address}}</h4>
+    <h3>Area</h3>
+    <h4>{{area}}</h4>
+    <h3>Mobile Number</h3>
+    <h4>{{mobilenumber}}</h4>
+    <h3>Plant Name</h3>
+    <h4>{{plantname}}</h4>
+
+    <a href="/edituser/" class="edit">Edit Profile</a>
+</div>
+{% endblock body %}

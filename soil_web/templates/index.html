@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+{% block title %}FieldScanner{% endblock title %}
+{% block body %}
+<h3 class="htext">{{text}} <br> wait 10sec for update the data</h3> 
+<div class="hide_div"><p id="terget">{{id}}</p></div>  
+  <main>
+    <div class="card">
+        <div class="graph-container">
+            <canvas id="soil_n"></canvas>
+        </div>
+        <div class="container">
+          <h4><b>Nitrogen in soil (N mg/kg)</b></h4> 
+          <p>Nitrogen is one of the macronutrients which is required in large amount for plant metabolism and growth act as a primary nutrient for plants. It is absorbed in Ammonium (NH4+), Nitrate (NO3-) ions forms. Nitrogen is the element which is not directly available to plants from atmosphere and earth crust.</p> 
+          
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="graph-container">
+            <canvas id="soil_p"></canvas>
+        </div>
+        <div class="container">
+          <h4><b>Phosphorus in soil (P mg/kg)</b></h4> 
+          <p>Phosphorus is an essential nutrient both as a part of several key plant structure compounds and as a catalysis in the conversion of numerous key biochemical reactions in plants. Phosphorus is noted especially for its role in capturing and converting the sun's energy into useful plant compounds.</p> 
+          
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="graph-container">
+            <canvas id="soil_k"></canvas>
+        </div>
+        <div class="container">
+          <h4><b>Potassium in soil (K mg/kg)</b></h4> 
+          <p>Potassium is essential in nearly all processes needed to sustain plant growth and reproduction. Plants deficient in potassium are less resistant to drought, excess water, and high and low temperatures. They are also less resistant to pests, diseases and nematode attacks. Because potassium improves the overall health of growing plants and helps them fight against disease, it is known as the "quality" nutrient. Potassium affects quality factors such as size, shape, color and vigor of the seed or grain, and improves the fiber quality of cotton.</p> 
+          
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="graph-container">
+            <canvas id="soil_mos"></canvas>
+        </div>
+        <div class="container">
+          <h4><b>Soil Water in %</b></h4> 
+          <p>Water is necessary for photosynthesis, which is how plants use energy from the sun to create their own food. During this process, plants use carbon dioxide from the air and hydrogen from the water absorbed through their roots and release oxygen as a byproduct. This exchange occurs through pore-like stoma on the leaves.</p> 
+          
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="graph-container">
+            <canvas id="soil_light"></canvas>
+        </div>
+        <div class="container">
+          <h4><b>Light in lux</b></h4> 
+          <p>Light provides the energy plants need to make the food required for them to grow and flower. Plants are the only organisms able to use the energy from light to produce sugars, starches and other substances needed by them as well as by other living organisms.</p> 
+          
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="graph-container">
+            <canvas id="soil_tem"></canvas>
+        </div>
+        <div class="container">
+          <h4><b>Temperature in C</b></h4> 
+          <p>High air temperature reduces the growth of shoots and in turn reduces root growth. High soil temperature is more crucial as damage to the roots is severe resulting in substantial reduction in shoot growth. High temperature at 38º C in rice reduced plant height, root elongation and smaller roots.</p> 
+          
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="graph-container">
+            <canvas id="soil_hum"></canvas>
+        </div>
+        <div class="container">
+          <h4><b>Humidity in %</b></h4> 
+          <p>If the humidity level is too high, plants cannot get rid of the water vapour, which stops the evaporation process and affects their growth. The plants' roots can no longer take on new nutrients. If the humidity is too high, plants evaporate too much water.</p> 
+          
+        </div>
+      </div>
+    </main>
+      {% endblock body %}

@@ -1,0 +1,40 @@
+{%load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{%static 'loginpage/sty.css'%}">
+    <title>Create account Page</title>
+</head>
+<body>
+    <div class="main_dev">
+        <h1 class="title">Create new account</h1>
+        <form class="main_form" action="/newuser/" method="post">
+            {% csrf_token %}
+            <h3 class="text">Your name</h3>
+            <input class="inele" type="text" name="name" id="user_id" placeholder="Your Name">
+            <h3 class="text">Mail Id</h3>
+            <input class="inele" type="text" name="email" id="user_id" placeholder="abcd@gmail.com">
+            <h3 class="text">Phone number</h3>
+            <input class="inele" type="text" name="phone_number" id="user_id" placeholder="+911234567895">
+            <h3 class="text">Address</h3>
+            <input class="inele" type="text" name="address" id="user_id" placeholder="Address">
+            <h3 class="text">Area in acre</h3>
+            <input class="inele" type="text" name="area" id="user_id" placeholder="323">
+            <h3 class="text">Plant name</h3>
+            <input class="inele" type="text" name="plant_name" id="user_id" placeholder="Rice">
+            <h3 class="text">Password</h3>
+            <input class="inele" type="password" name="password1" placeholder="Password" id="password">
+            <h3 class="text">Confirm Password</h3>
+            <input class="inele" type="password" name="password2" placeholder="Confirm password" id="password">
+            <button type="submit" id="sub_but">Create</button>
+        </form>
+        <h3 class="text">{{text}}</h3>
+    </div>
+    
+</body>
+<script src="{%static 'loginpage/main.js'%}"></script>
+</html>

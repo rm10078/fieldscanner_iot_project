@@ -1,0 +1,129 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-image: url(image/bgc2.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: Geneva, Verdana, sans-serif;
+}
+
+.title {
+    font-size: 2vw;
+    text-align: center;
+    padding: 1vw;
+    padding-bottom: 3vw;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+.main_dev {
+    width: 30vw;
+    height: auto;
+    padding: 5vw;
+    margin: auto;
+    margin-bottom: 2vw;
+    margin-top: 5vh;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-right: 2px solid rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(0, 0, 0);
+    border-radius: 5%;
+    box-shadow: .5vw .5vw 5px rgb(81, 81, 81);
+}
+
+.main_form {
+    display: flex;
+    flex-direction: column;
+}
+
+.inele {
+    width: 20vw;
+    height: 50px;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 1.5vw;
+    color: white;
+    transition: 500ms;
+    border-bottom: 3px solid rgb(0, 112, 255);
+}
+.inele:hover{
+    border-bottom: 3px solid rgb(255, 39, 111);
+    transition: 500ms;
+}
+
+.text {
+    padding: 10px;
+    color: white;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+#sub_but {
+    margin: 10px;
+    width: 5.5vw;
+    height: 50px;
+    text-align: center;
+    font-size: 1.5vw;
+    transition: 500ms;
+    background-color: rgb(0, 112, 255);
+    border-style: none;
+    border-radius: 5px;
+    color: white;
+    margin-left: 35%;
+}
+#sub_but:hover{
+    background-color: rgb(255, 39, 111);
+    transition: 500ms;
+}
+.f_password {
+    text-align: center;
+    font-size: large;
+    margin: 2%;
+    text-decoration: none;
+    transition: 500ms;
+    color: white;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+.f_password:hover{
+    color: rgb(255, 39, 111);
+    transition: 500ms;
+}
+
+@media only screen and (max-width: 900px){
+    .main_dev {
+        width: 80vw;
+        height: auto;
+    }
+    #sub_but {
+        width: 20vw;
+        font-size: x-large;
+    }
+
+    .inele {
+        width: 70vw;
+        height: 50px;
+        font-size: 3vw;
+    }
+    body{
+        background-image: url(image/bgcmobile.jpg);
+    }
+    .title {
+        font-size: 7vw;
+    }
+
+    .inele {
+        font-size: 5vw;
+    }
+}
